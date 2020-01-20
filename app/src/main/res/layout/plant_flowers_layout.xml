@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 风车 -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hills"
+        android:layout_marginLeft="@dimen/with_20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:src="@mipmap/mrkj_grow_windmill_2" />
+
+        <ImageView
+            android:id="@+id/windmill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/with_2dp"
+            android:layout_marginBottom="@dimen/with_16dp"
+            android:src="@mipmap/mrkj_grow_windmill_1" />
+
+    </FrameLayout>
+
+    <!-- 山 -->
+    <FrameLayout
+        android:id="@+id/hills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <!-- 蓝色的山 -->
+        <ImageView
+            android:id="@+id/blue_mountain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/mrkj_grow_hill_2" />
+
+        <!-- 绿色的山 -->
+        <ImageView
+            android:id="@+id/green_mountain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/mrkj_grow_hill_1" />
+
+    </FrameLayout>
+
+    <!-- 长花的效果 -->
+    <com.example.flowers.view.Plant
+        android:id="@+id/plant_animator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.example.flowers.view.Plant>
+
+</RelativeLayout>

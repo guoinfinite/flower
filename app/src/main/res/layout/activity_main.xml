@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+
+
+    <!-- 背景是在style中设置的 -->
+    <!-- 旋转的花瓣 -->
+    <com.example.flowers.view.RotateFlower
+        android:id="@+id/rotate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    </com.example.flowers.view.RotateFlower>
+
+    <!-- 展示帧动画 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/with_100dp"
+        android:orientation="vertical">
+
+        <!-- 显示上面的帧动画 -->
+        <ImageView
+            android:id="@+id/flower_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/flower_e" />
+
+        <!-- 显示下面的帧动画 -->
+        <ImageView
+            android:id="@+id/flower_z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:scaleType="centerInside"
+            android:src="@drawable/flower_z" />
+
+    </LinearLayout>
+
+    <!-- 显示下面的帧动画 -->
+    <ImageView
+        android:id="@+id/plant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/with_20dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/plant" />
+
+    <ImageView
+        android:id="@+id/flower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/plant"
+        android:layout_toRightOf="@id/plant"
+        android:src="@mipmap/mrkj_main_flowerbreath" />
+
+</RelativeLayout>

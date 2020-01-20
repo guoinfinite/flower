@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.flowers.ui.activity.SelectedFlowerActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/with_50dp"
+        android:layout_marginBottom="@dimen/with_10dp"
+        android:src="@mipmap/mrkj_secretgarden_txt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/with_5dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/flower1"
+            style="@style/MyCheckBoxStyle"
+            android:layout_width="@dimen/with_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/mrkj_flower_01"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/font_18sp" />
+
+        <CheckBox
+            android:id="@+id/flower2"
+            style="@style/MyCheckBoxStyle"
+            android:layout_width="@dimen/with_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/mrkj_flower_02"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/font_18sp" />
+
+        <CheckBox
+            android:id="@+id/flower3"
+            style="@style/MyCheckBoxStyle"
+            android:layout_width="@dimen/with_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/mrkj_flower_03"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/font_18sp" />
+
+        <CheckBox
+            android:id="@+id/flower4"
+            style="@style/MyCheckBoxStyle"
+            android:layout_width="@dimen/with_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/mrkj_flower_04"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/font_18sp" />
+
+        <CheckBox
+            android:id="@+id/flower5"
+            style="@style/MyCheckBoxStyle"
+            android:layout_width="@dimen/with_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/mrkj_flower_05"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/font_18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/with_5dp"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/flower6"
+            style="@style/MyCheckBoxStyle"
+            android:layout_width="@dimen/with_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/mrkj_flower_06"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/font_18sp" />
+
+        <CheckBox
+            android:id="@+id/flower7"
+            style="@style/MyCheckBoxStyle"
+            android:layout_width="@dimen/with_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/mrkj_flower_07"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/font_18sp" />
+
+        <CheckBox
+            android:id="@+id/flower8"
+            style="@style/MyCheckBoxStyle"
+            android:layout_width="@dimen/with_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/mrkj_flower_08"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/font_18sp" />
+
+        <CheckBox
+            android:id="@+id/flower9"
+            android:layout_width="@dimen/with_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/mrkj_flower_09"
+            android:gravity="center_horizontal"
+            android:textColor="#6B6B6B"
+            android:textSize="@dimen/font_18sp" />
+
+        <CheckBox
+            android:id="@+id/flower10"
+            android:layout_width="@dimen/with_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/mrkj_flower_10"
+            android:gravity="center_horizontal"
+            android:textColor="#6B6B6B"
+            android:textSize="@dimen/font_18sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/with_0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/select_end"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@+id/select_flower_counts"
+                android:text="你已选择了"
+                android:textColor="@color/left_text_color"
+                android:textSize="@dimen/font_16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/select_flower_counts"
+                android:text="种花"
+                android:textColor="@color/left_text_color"
+                android:textSize="@dimen/font_16sp" />
+
+            <TextView
+                android:id="@+id/select_flower_counts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="@dimen/font_16sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/select_end"
+            style="@style/MySelectFlowerTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/with_20dp"
+            android:background="@drawable/selected_flower_end_btn"
+            android:text="我选好了" />
+
+    </RelativeLayout>
+
+</LinearLayout>
